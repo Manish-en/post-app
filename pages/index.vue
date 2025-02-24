@@ -1,7 +1,10 @@
-<template>
-  <div class="text-center">
-    <NuxtLink to="/posts" class="px-4 py-2 mt-4 bg-blue-500 text-white rounded-md inline-block">
-      View Posts
-    </NuxtLink>
-  </div>
-</template>
+<template></template>
+<script lang="ts" setup>
+
+const route = useRouter();
+
+onMounted(() => {
+  route.push({ path : "/posts"});
+})
+
+</script>
